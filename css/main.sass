@@ -1,13 +1,17 @@
 $purple: #4d3a4a
-$brown: #9b7c7a
-$creamy: #edebd9
+$brown: #5f3a28
+$light-brown: #a18270
+$white: #f4f8f9
 $light-gold: #f8e5b4
 $gold: #dda660
 
 html
   font-size: 62.5%
 nav
-  background: $creamy
+  position: fixed
+  z-index: 1
+  background: rgba(244,248,249,0.5)
+  width: 100%
   display: flex
   justify-content: center
   align-items: center
@@ -20,11 +24,22 @@ nav
     margin-top: 1.6rem
     a
       font-family: "Open Sans"
+      font-size: 1.6rem
       color: $purple
-      margin: 1rem
+      margin: 1.5rem
 header
+  background-image: url("../img/header-img.jpg")
+  background-position: top-right
   display: block
-  height: 79rem
+  height: 100rem
+  h1
+    margin-top: 22rem
+    font-family: "Open Sans"
+    color: $purple
+    font-size: 6.4rem
+    span
+      padding-left: 11.2rem
+      color: $light-brown
 
 #recent-work
   img
